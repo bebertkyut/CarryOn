@@ -1,6 +1,7 @@
 "use client";
 
 import Header from "@/components/header";
+import Navigation from "@/components/navigation";
 
 export default function HomePage() {
 
@@ -8,6 +9,18 @@ export default function HomePage() {
     <div className="min-h-screen bg-gradient-to-br from-zinc-50 to-zinc-100 dark:from-zinc-900 dark:to-black">
       {/* Header */}
       <Header />
+
+      <div className="flex">
+        <Navigation active="luggage" />
+        <main className="flex-1 p-6">
+          <h1 className="text-2xl font-bold text-zinc-900 dark:text-zinc-50 mb-4">
+            Luggage
+          </h1>
+          <p className="text-zinc-600 dark:text-zinc-400">
+            Manage your luggage with ease. This is a temporary page to show successful login.
+          </p>
+        </main>
+      </div>
 
       {/* Main Content */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
